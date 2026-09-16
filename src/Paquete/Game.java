@@ -46,7 +46,7 @@ public class Game {
 
 	public int aumentarStock(int stock) {
 		int aumento = sc.nextInt();
-		while (aumento < 0) {
+		while (aumento <= 0) {
 			System.out.println("Introduzca un numero mayor a 0");
 		}
 		return aumento + getStock();
@@ -54,7 +54,7 @@ public class Game {
 
 	public int reducirStock(int stock) {
 		int reduccion = sc.nextInt();
-		while (reduccion < 0) {
+		while (reduccion <= 0) {
 			System.out.println("Introduzca un numero mayor a 0");
 		}
 		return getStock() - reduccion;
