@@ -16,7 +16,7 @@ public class Customer {
 		this.balance = balance;
 	}
 
-	public int getId() {
+	public int getId() { 
 		return id;
 	}
 
