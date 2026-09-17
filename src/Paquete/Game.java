@@ -4,16 +4,18 @@ import java.util.Scanner;
 
 public class Game {
 	Scanner sc = new Scanner(System.in);
-
+	
+	private int contador=0;
 	private int id = 0;
 	private String titulo;
 	private Genre genre;
 	private double precio;
 	private int stock;
 
-	public Game(int id, String titulo, Genre genre, double precio, int stock) {
+	public Game(String titulo, Genre genre, double precio, int stock) {
 		super();
-		this.id = id + 1;
+		this.contador=contador+1;
+		this.id = id + contador;
 		this.titulo = titulo;
 		this.genre = genre;
 		this.precio = precio;
